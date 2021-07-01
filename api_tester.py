@@ -2,7 +2,7 @@ import fire
 import requests
 
 API_HOST = "http://localhost:8000"
-RESOURCE_URI = "things"
+RESOURCE_URI = "cookie_stands"
 USERNAME = "admin"
 PASSWORD = "admin"
 
@@ -117,7 +117,7 @@ class ApiTester:
             "Authorization": f"Bearer {access_token}",
         }
 
-        original = self.get_cookiestand(id)
+        original = self.get_cookie_standstand(id)
 
         data = {
             "name": name or original["name"],
