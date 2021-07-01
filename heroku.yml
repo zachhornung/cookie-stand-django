@@ -5,3 +5,4 @@ release:
   image: web
 run:
   web: gunicorn project.wsgi --workers 4
+
